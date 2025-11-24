@@ -6,6 +6,11 @@ document.getElementById('connectBtn').onclick = () => {
   window.location.href = "tel:+918637294641";
 };
 
+// MOBILE MENU TOGGLE
+document.getElementById("menuBtn").onclick = () => {
+  document.getElementById("navMenu").classList.toggle("show");
+};
+
 /* Header scroll effect */
 window.addEventListener("scroll", () => {
   const header = document.getElementById("header");
