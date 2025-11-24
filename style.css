@@ -18,7 +18,7 @@ body {
 header {
   position:sticky;
   top:0;
-  width:104%;
+  width:100%;
   z-index:999;
   padding:18px 40px;
   display:flex;
@@ -292,3 +292,4 @@ header.scrolled {
   -webkit-background-clip: text;
   color: transparent;
 }
+
