@@ -5,39 +5,34 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Bhairabananda — Portfolio</title>
 
+  <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header>
-  <div class="header-container">
-
-    <div class="logo">
-      <img src="your-logo.png" alt="logo">
-      <h2>JINU BISWAL</h2>
+  <header id="header">
+    <div class="brand">
+      <img src="WhatsApp Image 2025-11-10 at 12.57.57-modified.png" alt="avatar">
+      <h1>JINU BISWAL</h1>
     </div>
+
+    <!-- NEW MOBILE MENU BUTTON -->
+    <div id="menuBtn" class="mobile-menu-btn">☰</div>
 
     <nav id="navMenu">
-      <a href="#">Home</a>
-      <a href="#">Skills</a>
-      <a href="#">Projects</a>
-      <a href="#">Education</a>
-      <a href="#">Experience</a>
-      <a href="#">Connect With Me</a>
+      <a href="#home">HOME</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#education">EDUCATION</a>
+      <a href="#experience">EXPERIENCE</a>
+      <a href="#connect">CONNECT WITH ME</a>
+      <div class="cta"><button id="connectBtn">CONNECT</button></div>
     </nav>
-
-    <div class="connect-btn">
-      <button>CONNECT</button>
-    </div>
-
-    <div class="menu-btn" id="menuBtn">☰</div>
-  </div>
-</header>
-
-
+  </header>
 
   <main class="hero" id="home">
 
@@ -48,6 +43,7 @@
 
       <p class="lead">A BUSINESS MIND WITH A CREATIVE VISION.</p>
 
+      <!-- NEW TYPING EFFECT -->
       <p class="typing-line">
         <span id="typingText"></span><span class="cursor">|</span>
       </p>
@@ -56,16 +52,16 @@
         <div class="col">
           <div class="section-title">JOIN MY VISION</div>
           <div class="icons">
-            <a class="icon-btn" href="https://instagram.com/jinubiswal5678" target="_blank">
-              <img src="instagram.png">
+            <a class="icon-btn floating" target="_blank" href="https://instagram.com/jinubiswal5678">
+              <img src="instagram.png" alt="Instagram">
             </a>
 
-            <a class="icon-btn" target="_blank" href="https://wa.me/+918637294641">
-              <img src="whatsapp.png">
+            <a class="icon-btn floating" target="_blank" href="https://wa.me/+918637294641">
+              <img src="whatsapp.png" alt="WhatsApp">
             </a>
 
-            <a class="icon-btn" target="_blank" href="https://linkedin.com/in/bhairabananda-biswal-28a048265">
-              <img src="linkedin.png">
+            <a class="icon-btn floating" target="_blank" href="https://linkedin.com/in/bhairabananda-biswal-28a048265">
+              <img src="linkedin.png" alt="LinkedIn">
             </a>
           </div>
         </div>
@@ -73,9 +69,9 @@
         <div class="col">
           <div class="section-title">PASSION FOR</div>
           <div class="icons">
-            <div class="icon-btn"><img src="compliant.png"></div>
-            <div class="icon-btn"><img src="analytics.png"></div>
-            <div class="icon-btn"><img src="growth.png"></div>
+            <div class="icon-btn floating"><img src="compliant.png"></div>
+            <div class="icon-btn floating"><img src="analytics.png"></div>
+            <div class="icon-btn floating"><img src="growth.png"></div>
           </div>
         </div>
       </div>
@@ -83,20 +79,20 @@
     </div>
 
     <div class="card-wrap reveal">
-      <div class="portrait-frame">
-        <img class="portrait" src="Picsart_25-11-09_19-16-41-622__1_-removebg-preview.png">
+      <div class="portrait-frame hover-tilt">
+        <img class="portrait" src="Picsart_25-11-09_19-16-41-622__1_-removebg-preview.png" alt="Bhairabananda">
       </div>
     </div>
 
   </main>
 
-
 <footer class="footer">
   <p>© <span id="year"></span> Bhairabananda Biswal — Built with ❤️ using HTML, CSS & JS</p>
 </footer>
 
-<script src="script.js"></script>
+
+  <!-- JS -->
+  <script src="script.js"></script>
 
 </body>
 </html>
-
