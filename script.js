@@ -1,16 +1,24 @@
+// Set year
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// Connect button → Call
 document.getElementById('connectBtn').onclick = () => {
   window.location.href = "tel:+918637294641";
 };
 
+// MOBILE MENU TOGGLE
+document.getElementById("menuBtn").onclick = () => {
+  document.getElementById("navMenu").classList.toggle("show");
+};
+
+/* Header scroll effect */
 window.addEventListener("scroll", () => {
-  const nav = document.querySelector(".custom-nav");
-  if (window.scrollY > 20) nav.classList.add("scrolled");
-  else nav.classList.remove("scrolled");
+  const header = document.getElementById("header");
+  if (window.scrollY > 20) header.classList.add("scrolled");
+  else header.classList.remove("scrolled");
 });
 
-/* Reveal */
+/* Scroll reveal */
 const reveals = document.querySelectorAll(".reveal");
 function revealElements() {
   reveals.forEach(el => {
@@ -21,7 +29,7 @@ function revealElements() {
 window.addEventListener("scroll", revealElements);
 revealElements();
 
-/* Typing */
+/* Typing effect */
 const roles = [
   "UI/UX Designer",
   "Web Developer",
@@ -46,6 +54,7 @@ function type() {
       i = (i + 1) % roles.length;
     }
   }
+
   setTimeout(type, deleting ? 30 : 20);
 }
 type();
