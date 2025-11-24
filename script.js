@@ -1,19 +1,16 @@
-// YEAR
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// CONNECT BUTTON → CALL
 document.getElementById('connectBtn').onclick = () => {
   window.location.href = "tel:+918637294641";
 };
 
-// SCROLL HEADER EFFECT
 window.addEventListener("scroll", () => {
-  const header = document.querySelector(".custom-header");
-  if (window.scrollY > 20) header.classList.add("scrolled");
-  else header.classList.remove("scrolled");
+  const nav = document.querySelector(".custom-nav");
+  if (window.scrollY > 20) nav.classList.add("scrolled");
+  else nav.classList.remove("scrolled");
 });
 
-// REVEAL ANIMATION
+/* Reveal */
 const reveals = document.querySelectorAll(".reveal");
 function revealElements() {
   reveals.forEach(el => {
@@ -24,7 +21,7 @@ function revealElements() {
 window.addEventListener("scroll", revealElements);
 revealElements();
 
-// TYPING EFFECT
+/* Typing */
 const roles = [
   "UI/UX Designer",
   "Web Developer",
@@ -49,7 +46,6 @@ function type() {
       i = (i + 1) % roles.length;
     }
   }
-
   setTimeout(type, deleting ? 30 : 20);
 }
 type();
