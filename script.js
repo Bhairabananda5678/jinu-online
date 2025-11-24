@@ -1,24 +1,19 @@
-// Set year
+// YEAR
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Connect button → Call
+// CONNECT BUTTON → CALL
 document.getElementById('connectBtn').onclick = () => {
   window.location.href = "tel:+918637294641";
 };
 
-// MOBILE MENU TOGGLE
-document.getElementById("menuBtn").onclick = () => {
-  document.getElementById("navMenu").classList.toggle("show");
-};
-
-/* Header scroll effect */
+// SCROLL HEADER EFFECT
 window.addEventListener("scroll", () => {
-  const header = document.getElementById("header");
+  const header = document.querySelector(".custom-header");
   if (window.scrollY > 20) header.classList.add("scrolled");
   else header.classList.remove("scrolled");
 });
 
-/* Scroll reveal */
+// REVEAL ANIMATION
 const reveals = document.querySelectorAll(".reveal");
 function revealElements() {
   reveals.forEach(el => {
@@ -29,7 +24,7 @@ function revealElements() {
 window.addEventListener("scroll", revealElements);
 revealElements();
 
-/* Typing effect */
+// TYPING EFFECT
 const roles = [
   "UI/UX Designer",
   "Web Developer",
